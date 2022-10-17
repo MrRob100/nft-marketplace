@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "genContractType": "abi-types-generator './public/contracts/NftMarket.json' --output='./types' --name=nftMarketContract --provider=ethers_v5"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.3",
@@ -14,19 +15,27 @@
     "@metamask/providers": "^9.1.0",
     "@openzeppelin/contracts": "^4.7.3",
     "@tailwindcss/forms": "^0.5.3",
+    "axios": "^1.1.2",
+    "ethereumjs-util": "^7.1.5",
     "ethers": "^5.7.1",
+    "form-data": "^4.0.0",
     "next": "12.3.1",
+    "next-iron-session": "^4.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "swr": "^1.3.0"
+    "react-toastify": "^9.0.8",
+    "swr": "^1.3.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "18.7.23",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/uuid": "^8.3.4",
     "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "ethereum-abi-types-generator": "^1.3.2",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8",
     "typescript": "4.8.4"
